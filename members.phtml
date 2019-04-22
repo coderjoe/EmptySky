@@ -1,0 +1,224 @@
+<html>
+
+<head>
+<title>Empty Sky Go Club</title>
+<link rel="stylesheet" href="/new/style.css" type="text/css">
+</head>
+<h1>Empty Sky Go Club</h1>
+<div id="nav">
+<ul>
+    <li><a href="/wherewhen.phtml">Where &amp; When We Play</a></li>
+    <li><a href="/members.phtml">Our Members</a></li>
+    <li><a href="/league">League</a></li>
+    <li><a href="mailto:president@emptysky.org">Contact Us</a></li>
+    <li><a href="/join.php">Mailing List</a></li>
+
+    <li><a href="/links.html">Go Links</a></li>
+</ul>
+</div>
+<font face="garamond, adobe garamond">
+
+<div id="content">
+<a href="images/photos/group_2nd_greg.jpg"><img src="images/photos/group_2nd_greg_small.jpg" border="1" align="right" alt=""></a>
+
+<img src="images/bullet2.gif" width="8" height="12" border="0" alt=""> <strong><big><big>OUR MEMBERS</big></big></strong><br>
+
+<br>
+
+If you're in town or new to RIT and are looking for a game (or just want to see what it's all about), stop on in.  So long as you enjoy Go, Chinese food, and talking about other people's moms, you'll fit right in. Beginners especially welcome.
+
+<br><br>
+
+<small>Ranks as of January 2006. Most photos by David Boyer. Other photos by K, Steve Colburn</small><br>
+<small>If you would like to be added to this page or your information updated please email <a href="mailto:members@emptysky.org">members@emptysky.org</a></small><br>
+
+<br><br>
+
+<div align="center">
+
+<?php
+
+/******** Update the array below to change the members listing */
+
+$members = array(
+	// name, image (no .jpg), rank, kgs names, igs names, link, wii code
+	array("Gregory Lefler", "greg", "founder, teacher, and friend", "", "", "http://www.greglefler.com"),
+	array("Jeremy Banzhaf", "jeremy", "1 dan", "kame, kaeru", "kaeru", ""),
+	array("Vincent Smith", "vincent", "30 kyu"),
+	array("Mike Van Wie", "mike2", "1 dan", "pogo"),
+	array("Amanda Rofe", "amanda2", "9 kyu", "Mander", "", ""),
+	array("Jeremiah Parry-Hill", "jeremiah2", "7 kyu", "jeremiah", "", ""),
+	array("Jia Ming Yu", "jia", "4 dan", "runts"),
+	array("William Baretsky", "piggy", "Piggy-chan!<br>2 kyu", "piggoro", "", ""),
+	array("Nick Hoover", "nick", "1 dan", "Nizzity"),
+	array("Christopher Sira", "chris", "1 dan", "cbsira"),
+	array("Becky Mulligan", "becky", "15 kyu"),
+	array("Bill Hewitt", "bill", "3 dan", "DoctorNick, mukaji"),
+	array("David Boyer", "bippy", "18 kyu", "Bippy", "", "http://www.bippies.com/"),
+	array("Ed Brannin", "ed", "8 kyu"),
+	array("Gregory Rosenblatt", "evilgreg", "4 dan", "Ubiquity", ""),
+	array("Ian McCown", "ian", "1 kyu", "ian", "Iancognito", "http://www.badassgopimps.com/"),
+	array("Josh Simmons", "josh", "2 dan", "kadoban", "","","5539 9193 1422 6870"),
+	array("Justin Kramer", "justin", "2 dan", "sevendeuce", "", "http://tin.nu/", "6819 7360 5142 6953"),
+	array("Steve Ranger", "steve", "17 kyu"),
+	array("Steve Colburn", "othersteve", "7 kyu", "Vash3G","","http://steve.su","1849 9896 6480 4373"),
+	array("Steve Person", "redshirtsteve", "19 kyu"),
+	array("Mark Zuniga", "mark", "6 kyu", "Levington"),
+	array("Jen Dumbreski", "jen", "25 kyu"),
+	array("Yuan Yuan \"Kitty\" Wang", "kitty", "7 kyu", "iamnobody, kittywang", "", ""),
+	array("Saul Lapidus", "saul", "Not Sal<BR>1 dan", "shl8594","","","1136 8226 9337 5509"),
+	array("Alex Brazie", "alex", "5 kyu", "AlexYoshi"),
+	array("Dave Caputo", "dave", "10 kyu", "dmc8814", "", "http://mojo.roguenet.org"),
+	array("Bill Brandt", "bill2", "4 kyu"),
+	array("Julie Baretsky", "julie", "6 kyu", "Spectrum"),
+	array("Jim DiCamillio", "jim", "25 kyu", "Tenkilian"),
+	array("James Halstead", "james", "17 kyu"),
+	array("Ralph Chen", "ralph", "3 dan"),
+	array("Nate Curtis", "nate", "4 kyu", "RogueNet", "", "http://nate.roguenet.org"),
+	array("Carrie Lapidus", "carrie", "6 kyu", "Ophelia", "MTSkyGirl"),
+	array("Thomas Hsiang", "thomas2", "8 dan", "veggie"),
+	array("Eugenia Huang", "eugenia", "19 kyu", "kainee"),
+	array("Sal Gionfriddo", "sal", "2 dan", "student","","","4057 8361 5888 9482"),
+	array("Zach Welch", "zach", "19 kyu"),
+	array("R.B. Boyer", "rb", "20 kyu", "", "", "http://chaotic.nexusvector.net/"),
+	array("Dominic Gerard", "dominic", "25 kyu"),
+	array("Ben Bassett", "benb", "25 kyu"),
+	array("Mike Lamenzo", "mikel", "10 kyu"),
+	array("Brad Woodard", "woodard", "20 kyu", "Woodard", "", "http://www.jitsuyo.blogspot.com/"),
+	array("David Skeldon", "skeldon", "17 kyu", "Chesed"),
+	array("Kei Kawabata", "kei", "2 kyu", "every0day"),
+	array("John Zangara", "john", "17 kyu", "LargoLee"),
+	array("Dave Berman", "dave2", "20 kyu", "HighCut"),
+	array("Will Wood", "will_wood", "6 kyu", "gonub"),
+	array("Will Boer", "will", "11 kyu", ""),
+	array("Doug Sumner", "Doug", "8 kyu", "bahumut"),
+	array("Nick Blake", "nick_blake", "1 kyu", "nickblake"),
+	array("Steve Davis", "steve_davis", "5 kyu", "xushigabua"),
+	array("Jason Au", "jason", "8 kyu", "sadgo"),
+	array("Tom Smith V", "tom_smith", "13 kyu", ""),
+	array("Matt Chan", "matt_chan", "17 kyu", ""),
+	array("Jared Beck", "jared_beck", "3 dan", "jared,<br>meditation"),
+	array("Phil Waldron", "phil_waldron", "6 dan", "pwaldron"),
+	array("Gus Price", "gus", "7 dan", "Zetsumei"),
+	array("Li Ang", "li_ang", "3 pro", "lyonweiqi"),
+	array("Li Yue", "li_yue2", "9 dan", "liyue"),
+	array("Dan Short", "dan_short", "3 dan", "flameblade"),
+	array("Elliot Stern", "elliot_stern", "13 kyu", ""),
+	array("Don Ban", "don_ban", "7 kyu", "moya"),
+	array("Tom Sekovski", "tom_sekovski", "18 kyu", ""),
+	array("A Boy", "a_boy", "", ""),
+	array("Gretchen Rodriquez", "gretchen", "25 kyu", ""),
+	array("Jile Gao", "jile_gao", "4 kyu", ""),
+	array("Nicholas Roussos", "nicholas", "4 kyu", "roussos"),
+	array("Andrew Jackson", "andrewjackson", "4 dan", "klayzen"),
+    array("Stephen Lloyd", "stephen_lloyd", "18 kyu"),
+	array("Markus Pankratz", "markus", "9 kyu"),    
+);
+
+// priority given to president -- image name is used as identifying string
+$priority =	array("markus");
+
+// make a sortable last-name row
+for($i = 0; $i < count($members); $i++) {
+	$name = explode(" ", $members[$i][0]);
+	if ($name[1] != "")
+		$sortby = $name[1];
+	else
+		$sortby = $name[0];
+	$members[$i][7] = strtolower($sortby);
+}
+
+function multidimsort($array_in, $field) {
+	$multiarray = array();
+	$array_out = array();
+	$loopvalue = 0;
+	$multicount = count($array_in) - 1;
+	for($i = 0; $i <= $multicount; $i++)
+		$multiarray[count($multiarray)] = $array_in[$i][$field];
+	asort($multiarray);
+	reset($multiarray);
+	while (list ($key, $val) = each ($multiarray)) {
+		$array_out[$loopvalue] = $array_in[$key];
+		$loopvalue++;
+	}
+	return $array_out;
+}
+
+$members = multidimsort($members, 7);
+
+function spit_member($member, &$col) {
+	if ($col >= 4) {
+		echo "</tr><tr><td colspan='3'>&nbsp;</td></tr><tr>\n";
+		$col = 1;
+	}
+	echo "<td>";
+	echo "<a href='images/photos/" . $member[1] . ".jpg'><img src='images/photos/" . $member[1] . "_small.jpg' width='100' height='150' hspace='10' border='1' align='left' alt=''></a>\n";
+	if ($member[5] != "")
+		echo "<a href='" . $member[5] . "'><span class='name'>" . $member[0] . "</span></a><br>\n";
+	else
+		echo "<span class='name'>" . $member[0] . "</span><br>\n";
+	echo "<span class='rank'>" . $member[2] . "<br></span>\n";
+	if ($member[3] != "")
+		echo "<span class='kgs'><br>KGS: " . $member[3] . "<br></span>\n";
+	if ($member[4] != "") {
+		echo "<span class='igs'>";
+		if ($member[3] == "")
+			echo "<br>";
+		echo "IGS: " . $member[4] . "<br></span>\n";
+	}
+	if ($member[6] != "") {
+		echo "<span class='wii-code'>
+			<br>Wii code: " . $member[6] . "<br></span>\n";
+		
+	}
+	echo "</td>\n";
+}
+
+function get_member_index($img) {
+	global $members;
+	for ($i = 0; $i < count($members); $i++) {
+		if ($members[$i][1] == $img)
+			return $i;
+	}
+	return -1;
+}
+
+function kill_member($index) {
+	global $members;
+	$new_members = array();
+	for ($i = 0; $i < count($members); $i++)
+		if ($i != $index)
+			$new_members[count($new_members)] = $members[$i];
+	$members = $new_members;
+}
+
+echo "<table cellspacing='0' cellpadding='0' border='0'>\n<tr>\n";
+$col = 1;
+// show priority members first
+for ($i = 0; $i < count($priority); $i++) {
+	$member_index = get_member_index($priority[$i]);
+	spit_member($members[$member_index], $col);
+	kill_member($member_index);
+	$col++;
+}
+// show the peons
+for ($i = 0; $i < count($members); $i++) {
+	spit_member($members[$i], $col);
+	$col++;
+}
+echo "</tr>\n</table>\n";
+
+
+?>
+
+</div>
+
+</font>
+
+<br><br>
+
+</td><td><img src="images/pixel_trans.gif" width="55" height="1" border="0" alt=""></td></tr></table>
+</div>
+
+</body>
+</html>

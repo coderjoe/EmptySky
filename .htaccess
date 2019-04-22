@@ -1,0 +1,3 @@
+# AddHandler application/x-httpd-php .php .phtml
+# AddType application/x-httpd-php .php .phtml
+AddHandler nfgi-handler .phtml
